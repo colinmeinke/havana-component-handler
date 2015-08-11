@@ -1,7 +1,7 @@
 /* global describe before it */
 
 import chai from 'chai';
-import ComponentHandler from '../../dist/handler.with-polyfill';
+import ComponentHandler from '../../dist/handler.server.with-polyfill';
 import Event from 'havana-event';
 
 const expect = chai.expect;
@@ -48,7 +48,7 @@ const routeData = {
   },
 };
 
-describe( 'Static', () => {
+describe( 'Handler', () => {
   describe( '_', () => {
     it( 'should be private', () => {
       expect( handler ).to.not.have.property( '_' );

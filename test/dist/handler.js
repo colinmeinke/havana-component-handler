@@ -8,9 +8,9 @@ var _chai = require('chai');
 
 var _chai2 = _interopRequireDefault(_chai);
 
-var _distHandlerWithPolyfill = require('../../dist/handler.with-polyfill');
+var _distHandlerServerWithPolyfill = require('../../dist/handler.server.with-polyfill');
 
-var _distHandlerWithPolyfill2 = _interopRequireDefault(_distHandlerWithPolyfill);
+var _distHandlerServerWithPolyfill2 = _interopRequireDefault(_distHandlerServerWithPolyfill);
 
 var _havanaEvent = require('havana-event');
 
@@ -20,7 +20,7 @@ var expect = _chai2['default'].expect;
 
 var event = new _havanaEvent2['default']();
 
-var handler = new _distHandlerWithPolyfill2['default']({
+var handler = new _distHandlerServerWithPolyfill2['default']({
   'event': event,
   'reporting': {
     'level': 0,
@@ -56,7 +56,7 @@ var routeData = {
   }
 };
 
-describe('Static', function () {
+describe('Handler', function () {
   describe('_', function () {
     it('should be private', function () {
       expect(handler).to.not.have.property('_');
@@ -92,7 +92,7 @@ describe('Static', function () {
         done();
       });
 
-      handler = new _distHandlerWithPolyfill2['default']({
+      handler = new _distHandlerServerWithPolyfill2['default']({
         'event': event,
         'reporting': {
           'level': 0,
