@@ -1,6 +1,8 @@
 # Havana component handler
 
+[![NPM version](https://badge.fury.io/js/havana-component-handler.svg)](http://badge.fury.io/js/havana-component-handler)
 [![Build Status](https://travis-ci.org/colinmeinke/havana-component-handler.svg?branch=master)](https://travis-ci.org/colinmeinke/havana-component-handler)
+[![Dependency status](https://david-dm.org/colinmeinke/havana-component-handler.svg)](https://david-dm.org/colinmeinke/havana-component-handler.svg)
 
 An HTML response handler.
 
